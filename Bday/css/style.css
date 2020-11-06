@@ -1,0 +1,172 @@
+*{
+	box-sizing: border-box;
+}
+
+header{
+	border-bottom: 2px solid grey;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: white;
+}
+
+#heading{
+	font-family: 'Lobster', cursive;
+	font-size: 45px;
+	color: black;
+	padding-left: 50px;
+	padding-top: 5px;
+}
+
+.carousel-caption{
+	font-family: 'Coiny', cursive;
+	text-transform: uppercase;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke: 3px black;
+}
+
+.container{
+	padding-top: 25px;
+	padding-bottom: 40px; 
+}
+
+.lines{
+	width: 100%;
+	height: 45px;
+	position: relative;
+}
+
+.lines::after, .lines::before{
+	content: "";
+	position: absolute;
+	margin: auto;
+	height: 2px;
+	background: grey;
+	width: 45%;
+	top: 45%;
+}
+
+.lines::after{
+	left: 0;
+
+}
+
+.lines::before{
+	right: 0;
+}
+
+.diamond-parent{
+	height: 40px;
+	width: 80px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	position: absolute;
+	display: flex;
+	padding-top: 10px;
+	padding-left: 9px;
+}
+
+.diamond-left{
+	border: 1px solid red; 
+	height: 18px;
+	width: 18px;
+	transform: rotate(45deg);
+}
+
+.diamond-center{
+	border: 1px solid red;
+	height: 25px;
+	width: 25px;
+	position: relative;
+	transform: rotate(45deg);
+	padding-bottom: 5px;
+	bottom: 10%;
+}
+
+.diamond-right{
+	border: 1px solid red;
+	height: 18px;
+	width: 18px;
+	transform: rotate(45deg);
+}
+
+.wishes{
+	font-family: 'Lobster', cursive;
+	font-size: 5vw; 
+}
+
+.wish-box{
+	position: relative;
+	height: 400px;
+	width: auto;
+	margin-top: 70px;
+	margin-right: 70px;
+	margin-left: 70px;
+	margin-bottom: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wish-box:before{
+	content: "";
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	left: -2px;
+	bottom: -2px;
+	background-color: white;
+	z-index: -1;
+}
+
+.wish-box:after{
+	content: "";
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	left: -2px;
+	bottom: -2px;
+	background-color: red;
+	z-index: -2;
+	filter: blur(20px);
+}
+
+.img-part{
+	float: left;
+	width: auto;
+	height: 100%;
+	align-items: center;
+}
+
+.img-part>img{
+	max-height: 100%;
+	max-width: 400px;
+	vertical-align: middle;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+
+.wish-part{
+	float: right;
+	padding-left: 25px;
+	font-family: 'Grandstander', cursive;
+	height: 100%
+	vertical-align: center;
+}
+
+.wish-part>.para{
+	padding-top: 5px;
+	max-height: 100%;
+	padding-bottom: 5px;
+	font-size: 1.3vw;
+}
+
+.wish-part>.name{
+	padding-right: 10vw;
+	font-size: 25px;
+}
+
